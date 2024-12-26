@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_Slider</title>
+
+    <!-- CSS-LINK -->
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="image-slider" id="image-slider">
+
+            <img src="./pngImage.png" alt="" class="transp">
+
+            <div class="image1" id="image1">
+
+                <img src="./image.jpeg" alt="" width="100%">
+
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        let image1 = document.getElementById("image-slider");
+        let image2 = document.getElementById("image1");
+
+        var leftSpace = image1.offsetLeft;
+       
+
+        image1.onmousemove = function(e){
+
+            var boxWidth = (e.pageX - leftSpace) + "px";
+            image2.style.width = boxWidth;
+            
+        }
+
+
+    </script>
+</body>
+</html>
