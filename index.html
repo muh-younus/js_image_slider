@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
 
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
 
     <div class="container">
 
@@ -22,28 +24,47 @@
 
                 <img src="./image.jpeg" alt="" width="100%">
 
-                
+
             </div>
 
         </div>
     </div>
 
-    <script>
+    <script >
 
         let image1 = document.getElementById("image-slider");
-        let image2 = document.getElementById("image1");
+        // let image2 = document.getElementById("image1");
 
-        var leftSpace = image1.offsetLeft;
-       
+        // var leftSpace = image1.offsetLeft;
 
-        image1.onmousemove = function(e){
 
-            var boxWidth = (e.pageX - leftSpace) + "px";
-            image2.style.width = boxWidth;
-            
-        }
+        // image1.onmousemove = function(e){
+
+        //     var boxWidth = (e.pageX - leftSpace) + "px";
+        //     image2.style.width = boxWidth;
+
+        // }
+
+        let array = [11, 22, 33, 44, 55];
+
+        let b = array.map((value,index,array) => {
+
+            return value + index;
+        })
+
+        
+
+        let array1 = [11, 22, 33, 44, 55];
+
+        let b1 = array1.filter((value) => {
+
+            return value > 20;
+        })
+
+        console.log(b1,array1);
 
 
     </script>
 </body>
+
 </html>
